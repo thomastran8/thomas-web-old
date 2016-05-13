@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Thomas Web - Home </title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <style>
+<head>
+  <title> Thomas Web - Home </title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <style>
     html, body {
     	height: 100%;
       background-color: #5C90AD;
     }
     body {
-    	margin: 0px;
+    	
     }
     .box-body {
       border: 3px;
@@ -22,6 +22,15 @@
     .header {
       width: 80%;
       height: 15%;
+      position: relative;
+    }
+    .header-content {
+      position: absolute;
+      bottom: 0;
+    }
+    .profile-box {
+      width: 14.5%;
+      height: 14.5%;
     }
     .top-body {
       width: 49.75%;
@@ -44,22 +53,25 @@
       margin-right: 10%;
       float: right;
     }
-    </style>
-  </head>
-  <body>
-    <div class="header box-body">
+  </style>
+</head>
+<body>
+  <div class="header box-body">
+    <div class="header-content">
       Profile Pic
       <a href="https://www.google.com/"> Profile </a> &nbsp;
       <a href="https://www.google.com/"> Featured Items </a> &nbsp;
+      <a href="https://www.google.com/"> Projects </a> &nbsp;
       <a href="https://www.google.com/"> Recent News </a> &nbsp;
       <a href="https://www.google.com/"> Media Gallery </a> &nbsp;
       <a href="https://www.google.com/"> Quote Wall </a> &nbsp;
       <a href="https://www.google.com/"> Daily Log </a>
     </div>
+  </div>
 
-    <div class="top-body box-body"> About Me </div>
-    <div class="right-body box-body"> Recent News </div>
-    <div class="bottom-body box-body"> Featured Item </div>
-  </body>
+  <div class="top-body box-body"> About Me </div>
+  <div class="right-body box-body"> Recent News </div>
+  <div class="bottom-body box-body"> Featured Item </div>
+</body>
 
 </html>
