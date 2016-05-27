@@ -3,6 +3,8 @@
 <head>
   <title>Thomas Web - Profile</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link rel="stylesheet" href="vegas.min.css">
+  <script src="vegas.min.js>"</script>
   <style>
     body {
       background-color: #5C90AD;
@@ -10,11 +12,22 @@
     .box {
 
     }
+    .medieval {
+
+    }
   </style>
+  
+  <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
 </head>
 <body>
 
-<img class="picture" id="pixel-character" src="http://orig04.deviantart.net/6fd0/f/2014/294/c/5/pixel_knight_by_emohedgehog237-d83na7k.png">
+<img class="medieval" id="pixel-character" src="http://orig04.deviantart.net/6fd0/f/2014/294/c/5/pixel_knight_by_emohedgehog237-d83na7k.png">
+
+<img class="medieval" id="pixel-castle" src="https://s-media-cache-ak0.pinimg.com/736x/53/36/1a/53361ac634193f9182a3210ee6633f3f.jpg">
 
 <h1 id="header-text">Hello World 0</h1>
 
@@ -27,9 +40,17 @@
   <button type="button">Click Me!</button>
   <button onclick="myFunction()">Number CLicker</button>
   <button onclick="enlarge()">Photo Enlarge</button>
+  <button id="show-hide">show/hide</button>
 
   <script>
 
+  var i = 0;
+
+  $("#show-hide").on("click", function() {
+    for(var e = 0; e < 100; e++) {
+      $(".medieval").delay(1000).fadeToggle(0).delay(1000).fadeToggle(0);
+    }
+  })
 
   var i = 0;
   function myFunction() {
@@ -40,7 +61,8 @@
   }
 
   function enlarge() {
-    document.getElementById("pixel-character").style = "width: 20%";
+
+    $(".medieval").width("50%");
   }
 
   function minimize() {

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 3</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-color: yellow;
+            font-family: 'Raleway', sans-serif;
+            margin: 0px;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+        }
+        .top {
+            height: 75%;
+            background-color: purple;
+        }
+        .middle {
+            background-color: blue;
+        }
+        .bottom {
+            height: 75%;
+            background-color: orange;
+        }
+        .top h1, .top a, .middle h1, .middle a {
+            color: white;
+        }
+        .cat-image {
+            max-width: 50%;
+        }
+        .dog-image {
+            max-width: 50%;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1 id="header-text"><i class="fa fa-user" aria-hidden="true"></i> Hello DG</h1>
+    <hr>
+
+    <div class="top" id="top">
+        <h1>top</h1>
+        <button onclick="changeHeader()">Change Hello DG to Hello Web Group</button><br>
+        <button onclick="enlarge()">Enlarge cat photo!</button><br>
+        <button id="show-hide-btn">Show/Hide Cat Photo</button><br>
+        
+        <img class="cat-image" id="cat-image" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg">
+    </div>
+
+    <div class="middle">
+        <h1>My Pet Collection</h1>
+        <center><button id="show-cat-btn">Show Cat Photo</button><button id="show-dog-btn">Show Dog Photo</button></center><br><br>
+        <img class="cat-image" src="https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg"><img class="cat-image" src="http://i1.irishmirror.ie/incoming/article6745850.ece/ALTERNATES/s615b/Ginger-tabby-cat.jpg"><img class="cat-image" src="http://g-ecx.images-amazon.com/images/G/01/img15/pet-products/small-tiles/30423_pets-products_january-site-flip_3-cathealth_short-tile_592x304._CB286975940_.jpg"><img class="cat-image" src="http://www.top13.net/wp-content/uploads/2015/10/perfectly-timed-funny-cat-pictures-5.jpg">
+
+        <br><br>
+
+        <img class="dog-image" src="https://i.kinja-img.com/gawker-media/image/upload/xqkbwkexcl7udc5va7pn.jpg"><img class="dog-image" src="http://g-ecx.images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg"><img class="dog-image" src="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi"><img class="dog-image" src="https://pixabay.com/static/uploads/photo/2016/01/05/17/51/dog-1123016_960_720.jpg">
+    </div>
+
+    <div class="bottom">
+        <h1>bottom</h1>
+        <form name="contactForm" onsubmit="return validate()">
+            Name: <input type="text" name="firstname">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        $(".cat-image").hide();
+        $(".dog-image").hide();
+        $("#header-text").hide();
+        $("#top").hide();
+        $(function() {
+            $("#header-text").fadeIn();
+            $("#top").slideDown(500);
+        })
+
+        $("#show-hide-btn").on("click", function() {
+            $("#cat-image").fadeToggle(1000);;
+        })
+
+        $("#show-cat-btn").on("click", function() {
+            $(".cat-image").fadeIn();
+            $(".dog-image").fadeOut();
+        })
+
+        $("#show-dog-btn").on("click", function() {
+            $(".dog-image").fadeIn();
+            $(".cat-image").fadeOut();
+        })
+
+        function changeHeader() {
+            var text = document.getElementById("header-text").innerHTML;
+            if (text == "Hello DG")
+                document.getElementById("header-text").innerHTML = "Hello Web Group";
+            else
+                document.getElementById("header-text").innerHTML = "Hello DG";
+
+        }
+
+        function enlarge() {
+            document.getElementById("cat-image").style = "width: 100%";
+        }
+
+        function validate() {
+            var text = document.forms["contactForm"]["firstname"].value;
+            if (text == "")
+                alert("Error! Textbox is empty");
+            else
+                alert("Your value is " + text);
+        }
+        // document.getElementById("header-text").innerHTML = "Hello Web Group";
+        // document.getElementById("header-text").style.fontSize = "100px";
+    </script>
+
+  </body>
+</html>
