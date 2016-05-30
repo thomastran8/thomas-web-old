@@ -8,69 +8,92 @@
     	height: 100%;
       background-color: #5C90AD;
     }
-    .box-holder {
+    .container-group {
       min-width: 800px;
       min-height: 800px;
       height: 100%;
-      width: 100%;
     }
-    .box-body {
-      border-style: solid;
-      border-color: #95A5A6;
-      box-sizing: border-box;
-      background-color: #ECF0F1;
-    }
-    .header {
+    .container-header {
       width: 80%;
       height: 15%;
       margin-left: 10%;
-      position: relative;
-    }
-    .header-content {
-      position: absolute;
-      bottom: 0;
+      /*position: relative;*/
     }
     .title-box {
       width: 14.5%;
       height: 14.5%;
     }
-    .top-body {
+    .container-top-body {
       width: 50%;
       height: 42.5%;
       margin-left: 10%;
       float: left;
     }
-    .bottom-body {
+    .container-bottom-body {
       width: 50%;
       height: 42.5%;
       margin-left: 10%;
       float: left;
     }
-    .right-body {
+    .container-right-body {
       width: 30%;
       height: 85%;
       margin-right: 10%;
       float: right;
     }
+    .box-body {
+      width: 99%;
+      height: 99%;
+      /*border-style: solid;*/
+      border-color: #95A5A6;
+      /*box-sizing: border-box;*/
+      background-color: #ECF0F1;
+      /*margin: 0%;*/
+    }
+    .header-content {
+      /*position: absolute;*/
+      /*bottom: 0;*/
+      /*margin: 0%;*/
+    }
   </style>
 </head>
 <body>
-  <div class="box-holder">
-    <div class="header box-body">
-      <div class="header-content">
-        Website Title
-        <a href="https://www.google.com/"> Profile </a> &nbsp;
-        <a href="https://www.google.com/"> Featured Items </a> &nbsp;
-        <a href="https://www.google.com/"> Projects </a> &nbsp;
-        <a href="https://www.google.com/"> Recent News </a> &nbsp;
-        <a href="https://www.google.com/"> Media Gallery </a> &nbsp;
-        <a href="https://www.google.com/"> Quote Wall </a> &nbsp;
-        <a href="https://www.google.com/"> Daily Log </a>
+  <div class="container-group">
+      <div class="container-header">
+        <div class="box-body">
+          <div class="header-content">
+            Website Title
+            <a href="https://www.google.com/"> Profile </a> &nbsp;
+            <a href="https://www.google.com/"> Featured Items </a> &nbsp;
+            <a href="https://www.google.com/"> Projects </a> &nbsp;
+            <a href="https://www.google.com/"> Recent News </a> &nbsp;
+            <a href="https://www.google.com/"> Media Gallery </a> &nbsp;
+            <a href="https://www.google.com/"> Quote Wall </a> &nbsp;
+            <a href="https://www.google.com/"> Daily Log </a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="top-body box-body"> About Me </div>
-    <div class="right-body box-body"> Recent News </div>
-    <div class="bottom-body box-body"> Featured Item </div>
+      <div class="container-top-body">
+        <div class="box-body">
+          <div class="header-content">
+          About Me
+          </div>
+        </div>
+      </div>
+      <div class="container-right-body">
+        <div class="box-body">
+          <div class="header-content">
+          Recent News
+          </div>
+        </div>
+      </div>
+      <div class="container-bottom-body">
+        <div class="box-body">
+          <div class="header-content">
+          Featured Item
+          </div>
+        </div>
+      </div>
   </div>
 </body>
 </html>
