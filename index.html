@@ -2,14 +2,34 @@
 <html>
 <head>
   <title> Thomas Web - Home </title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <style>
     html, body {
       height: 100%;
-      min-width: 600px;
+      min-width: 1200px;
       min-height: 600px;
       background-image: url("./images/background/mountain.jpg");
       background-size: cover;
+    }
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      text-decoration: underline;
+      font-size: 24px;
+      line-height: 0px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    li {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
     }
     .container-group {
       height: 100%;
@@ -18,10 +38,6 @@
     .container-single {
       height: 100%;
       position: relative;
-    }
-    .title-box {
-      width: 14.5%;
-      height: 14.5%;
     }
     .box-body {
       width: calc(100% - 24px);
@@ -51,63 +67,64 @@
     .section {
       height: 42.5%;
     }
-    .button1 {
+    .category {
       background-color: #5C90AD;
       color: white;
       border: 2px solid #5C90AD;
       border-radius: 5px;
     }
-    .button1:hover {
+    .category:hover {
       background-color: white;
       color: black;
-    }
-    a {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="pure-g">
-  <div class="pure-u-4-24"></div>
-  <div class="pure-u-16-24 container-group">
-    <div class="pure-g">
-      <div class="pure-u-1 top container-single">
-        <div class="box-body">
-          <div class="top-content">
-          <button class="button1"> Home </button>
-          <button class="button1"> Profile </button>
-          <button class="button1"> Projects </button>
-          <button class="button1"> Featured-Item </button>
-          <button class="button1"> News </button>
-          <button class="button1"> Photos </button>
-          <button class="button1"> Quotes </button>
-          <button class="button1"> Random </button>
+    <div class="pure-u-4-24"></div>
+    <div class="pure-u-16-24 container-group">
+      <div class="pure-g">
+        <div class="pure-u-1 top container-single">
+          <div class="box-body">
+            <div class="top-content">
+              <button onclick="location.href='index.html'" class="category"> <i class="fa fa-home" aria-hidden="true"></i> Home </button>
+              <button onclick="location.href='profile.html'" class="category"> <i class="fa fa-book" aria-hidden="true"></i> Profile </button>
+              <button onclick="location.href='projects.html'" class="category"> <i class="fa fa-briefcase" aria-hidden="true"></i> Projects </button>
+              <button onclick="location.href='featured.html'" class="category"> <i class="fa fa-star" aria-hidden="true"></i> Featured-Item </button>
+              <button onclick="location.href='news.html'" class="category"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> News </button>
+              <button onclick="location.href='photos.html'" class="category"> <i class="fa fa-picture-o" aria-hidden="true"></i> Photos </button>
+              <button onclick="location.href='quotes.html'" class="category"> <i class="fa fa-quote-left" aria-hidden="true"></i> Quotes </button>
+              <button onclick="location.href='random.html'" class="category"> <i class="fa fa-random" aria-hidden="true"></i> Random </button>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-2-3 section container-single">
+          <div class="box-body">
+            <h1> Introduction </h1>
+            <p> Hello, my name is Thomas Tran and welcome to my website. This is the first website I have ever coded with html, javascript, and css. This website was created during my Spring 2016 quarter in my web development group as part of Developers' Guild at De Anza College. <br><br> Thanks to our group leader, Chris Wong, this website was made possible. </p>
+          </div>
+        </div>
+        <div class="pure-u-1-3 section container-single">
+          <div class="box-body">
+            <h1> News </h1>
+            <p>
+            <li> Website in development: 4/4/16 - ? </li>
+            </p>
+          </div>
+        </div>
+        <div class="pure-u-2-3 section container-single">
+          <div class="box-body">
+            <h1> Featured-Item </h1>
+          </div>
+        </div>
+        <div class="pure-u-1-3 section container-single">
+          <div class="box-body">
+            <h1> Quote of the Month </h1>
           </div>
         </div>
       </div>
-      <div class="pure-u-2-3 section container-single">
-        <div class="box-body">
-        <a>About Me</a>
-        </div>
-      </div>
-      <div class="pure-u-1-3 section container-single">
-        <div class="box-body">
-        News
-        </div>
-      </div>
-      <div class="pure-u-2-3 section container-single">
-        <div class="box-body">
-        Featured Item
-        </div>
-      </div>
-      <div class="pure-u-1-3 section container-single">
-        <div class="box-body">
-        Quote of the Month
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="pure-u-4-24"></div>
+    <div class="pure-u-4-24"></div>
   </div>
 </body>
 </html>
