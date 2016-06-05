@@ -91,14 +91,13 @@ li {
 .dropdown {
     position: relative;
     display: inline-block;
-    /*float: right;*/
     margin-top: 80px;
-    /*right: 0;*/
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
