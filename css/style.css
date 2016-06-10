@@ -1,5 +1,5 @@
 html, body {
-  background: url(../images/background/mountain.jpg) no-repeat center center fixed; 
+  background: url(../img/bg/mountain.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11,20 +11,20 @@ h1 {
   font-weight: 700;
   text-decoration: underline;
   font-size: 24px;
-  line-height: 50px;
-}
-h1::first-line {
-  line-height: 0px;
 }
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
+  padding: 20px;
 }
 li {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+hr {
+  border-color: black;
 }
 .spacer {
   height: 20px;
@@ -65,8 +65,8 @@ li {
 .category-bar {
   position: absolute;
   bottom: 0;
-  margin-bottom: -3px;
-  margin-left: 10px;
+  margin-bottom: -23px;
+  margin-left: 0px;
   margin-right: 5px;
 }
 .category {
