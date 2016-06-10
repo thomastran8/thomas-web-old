@@ -56,16 +56,16 @@ li {
   min-height: 350px;
 }
 .category-section {
-  margin-left: 140px;
+  margin-left: 280px;
   height: 100%;
-  width: calc(100% - 150px);
+  width: calc(100% - 290px);
   position: absolute;
   top: 0;
 }
 .category-bar {
   position: absolute;
   bottom: 0;
-  /*margin-bottom: 0px;*/
+  margin-bottom: -3px;
   margin-left: 10px;
   margin-right: 5px;
 }
@@ -74,7 +74,7 @@ li {
   color: white;
   border: 2px solid #2574A9;
   border-radius: 5px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   font-size: 18px;
 }
 .category:hover {
@@ -84,7 +84,7 @@ li {
 .dropbtn {
     background-color: #2574A9;
     color: white;
-    padding: 16px;
+    padding: 16px 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -100,7 +100,7 @@ li {
     position: absolute;
     right: 0;
     background-color: white;
-    min-width: 250px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 10;
 }
