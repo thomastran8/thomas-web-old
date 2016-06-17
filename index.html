@@ -14,7 +14,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/justifiedGallery.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="row">
@@ -66,15 +68,15 @@
               <div class="row">
                 <div class="col-md-8 no-gutter">
                   <div class="row">
-                    <div class="box">
+                    <div class="box-home">
                       <h1> Introduction </h1>
-                      <p> Hello, my name is Thomas Tran and welcome to my first website. This website was created during the quarter of spring 2016's web development group as part of Developers' Guild at De Anza College. <br><br> Special thanks to web development group leader, Chris Wong. </p>
+                      <p> Hello, my name is Thomas Tran and welcome to my first website. This website was created during spring 2016's web development group as part of Developers' Guild at De Anza College. <br><br> Special thanks to web development group leader, Chris Wong. </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 no-gutter">
                   <div class="row">
-                    <div class="box">
+                    <div class="box-home">
                       <h1> News </h1>
                       <br>
                       <li> Website in development: 4/4/16 - ? </li>
@@ -83,15 +85,21 @@
                 </div>
                 <div class="col-md-8 no-gutter">
                   <div class="row">
-                    <div class="box">
+                    <div class="box-home">
                       <h1> Featured-Item </h1>
-                      <p> Rebel Invader </p>
+                      <p>
+                      Rebel Invader <br>
+                      Rebel invader is an android project that I worked with a team during winter 2016. It is a space shooter programmed in java.
+                      </p>
+                      <div id="featured-pic">
+                        <a href="img/rebel/9.jpg"> <img alt="Missile launch ready to detonate" src="img/rebel/9.jpg" /> </a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-4 no-gutter">
                   <div class="row">
-                    <div class="box">
+                    <div class="box-home">
                       <h1> Quote of the Month </h1>
                       <center> <p> "Computer are like Old Testament gods: lots of rules and no mercy." <br><br> -Joseph Campbell </p> </center>
                     </div>
@@ -106,5 +114,13 @@
     <div class="col-md-2"></div>
     <div class="col-md-12 hidden-sm hidden-xs spacer"></div>
   </div>
+  <script src="js/jquery.justifiedGallery.min.js"></script>
+  <script>
+    $("#featured-pic").justifiedGallery({
+      rowHeight: 400,
+      lastRow: 'nojustify',
+      margins: 5
+    });
+  </script>
 </body>
 </html>

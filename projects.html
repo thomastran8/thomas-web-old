@@ -14,7 +14,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/justifiedGallery.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="row">
@@ -68,19 +70,56 @@
                   <div class="row">
                     <div class="box">
                       <h1> Projects </h1>
-                      <p> </p>
+                      <p>
+                        Here are the projects I have worked on as part of a team and for personal fun. I enjoy doing these projects as it further helps me learn more about computer science outside the classroom.
+                      </p>
                     </div>
                     <div class="box">
-                      <h1> Project1 </h1>
-                      <p> </p>
+                      <h2> Road Runner </h2>
+                      <p>
+                        This project was created during fall 2015 as part of Developers' guild simple games group. We programmed the game using SFML's framework and using C++ language. This is the first game I have ever coded. This group was led by Paul Merill and Vihan Chaundry. The game's theme is based on Warner Bro's "Wile E. Coyote and The Road Runner" cartoon. The game also features Sanic as a special powerup in order to go really fast!
+                      </p>
+                      <div id="runner-pics">
+                        <a href="img/roadrunner/1.jpg"> <img alt="Road Runner on the run" src="img/roadrunner/1.jpg" /> </a>
+                        <a href="img/roadrunner/2.jpg"> <img alt="Coyote encounter" src="img/roadrunner/2.jpg" /> </a>
+                        <a href="img/roadrunner/3.jpg"> <img alt="Uh-Oh boulder" src="img/roadrunner/3.jpg" /> </a>
+                        <a href="img/roadrunner/4.jpg"> <img alt="Sanic jump" src="img/roadrunner/4.jpg" /> </a>
+                        <a href="img/roadrunner/5.jpg"> <img alt="Too close for comfort" src="img/roadrunner/5.jpg" /> </a>
+                        <a href="img/roadrunner/6.jpg"> <img alt="Over the tumbleweed" src="img/roadrunner/6.jpg" /> </a>
+                        <a href="img/roadrunner/7.jpg"> <img alt="Watch-out cactus" src="img/roadrunner/7.jpg" /> </a>
+                        <a href="img/roadrunner/8.jpg"> <img alt="Road Runner jump" src="img/roadrunner/8.jpg" /> </a>
+                        <a href="img/roadrunner/9.jpg"> <img alt="Game Over" src="img/roadrunner/9.jpg" /> </a>
+                      </div>
                     </div>
                     <div class="box">
-                      <h1> Project2 </h1>
-                      <p> </p>
+                      <h2> Rebel Invader </h2>
+                      <p>
+                        Revel Invader was a project created during winter 2016 as part of Developers' guild intermediate java game group. The group was led by Vihan Chaundry with great success. The game features a space shooter type of game where you play as the rebel invading the imperial base. Shoot pellets and explode missiles to destroy enemy ships and buildings. Passive powerup activates when a limit is reached by destruction - rapid fire.
+                      </p>
+                      <div id="rebel-pics">
+                        <a href="img/rebel/1.jpg"> <img alt="Title" src="img/rebel/1.jpg" /> </a>
+                        <a href="img/rebel/2.jpg"> <img alt="Help screen" src="img/rebel/2.jpg" /> </a>
+                        <a href="img/rebel/3.jpg"> <img alt="Highscore screen" src="img/rebel/3.jpg" /> </a>
+                        <a href="img/rebel/4.jpg"> <img alt="Starting out" src="img/rebel/4.jpg" /> </a>
+                        <a href="img/rebel/5.jpg"> <img alt="Missile explosion" src="img/rebel/5.jpg" /> </a>
+                        <a href="img/rebel/6.jpg"> <img alt="Enemy ships" src="img/rebel/6.jpg" /> </a>
+                        <a href="img/rebel/7.jpg"> <img alt="Enemy buildings" src="img/rebel/7.jpg" /> </a>
+                        <a href="img/rebel/8.jpg"> <img alt="Rapid fire" src="img/rebel/8.jpg" /> </a>
+                        <a href="img/rebel/9.jpg"> <img alt="Missile launch ready to detonate" src="img/rebel/9.jpg" /> </a>
+                        <a href="img/rebel/10.jpg"> <img alt="Missile explosion radius hit" src="img/rebel/10.jpg" /> </a>
+                      </div>
                     </div>
                     <div class="box">
-                      <h1> Project3 </h1>
-                      <p> </p>
+                      <h2> Zomblocks </h2>
+                      <p>
+
+                      </p>
+                    </div>
+                    <div class="box">
+                      <h2> Thomas - Web </h2>
+                      <p>
+                        Here is the first website I coded as part of the beginner web development group of De Anza's Developers' Guild. This project was made in spring 2016. The group was led by Chris Wong. The website you are on right now is this very project. It is coded in html, css, and javascript. No pictures needed, enjoy!
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -89,9 +128,21 @@
           </div>
         </div>
       </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-12 hidden-sm hidden-xs spacer"></div>
     </div>
-    <div class="col-md-2"></div>
-    <div class="col-md-12 hidden-sm hidden-xs spacer"></div>
-  </div>
-</body>
-</html>
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script>
+      $("#runner-pics").justifiedGallery({
+        rowHeight: 200,
+        lastRow: 'nojustify',
+        margins: 5
+      });
+      $("#rebel-pics").justifiedGallery({
+        rowHeight: 300,
+        lastRow: 'nojustify',
+        margins: 5
+      });
+    </script>
+  </body>
+  </html>

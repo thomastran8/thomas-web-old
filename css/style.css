@@ -12,6 +12,12 @@ h1 {
   text-decoration: underline;
   font-size: 24px;
 }
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 20px;
+}
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -27,7 +33,7 @@ hr {
   border-color: black;
 }
 .spacer {
-  height: 20px;
+  height: 10px;
 }
 .group-page {
   /*Does nothing yet*/
@@ -48,12 +54,19 @@ hr {
   height: 160px;
   padding: 10px;
 }
-.box {
+.box-home {
   border-radius: 10px;
   background-color: #ECF0F1;
   padding: 10px;
   margin: 5px;
   min-height: 350px;
+}
+.box {
+  border-radius: 10px;
+  background-color: #ECF0F1;
+  padding: 10px;
+  margin: 5px;
+  min-height: 100px;
 }
 .category-section {
   margin-left: 280px;
@@ -66,7 +79,7 @@ hr {
   position: absolute;
   bottom: 0;
   margin-bottom: -23px;
-  margin-left: 0px;
+  margin-left: -10px;
   margin-right: 5px;
 }
 .category {
