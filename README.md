@@ -1,1 +1,1 @@
-# Link to homepage: thomastran8.github.io
+# Link to homepage: http://thomastran8.github.io/
